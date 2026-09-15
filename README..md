@@ -1,12 +1,14 @@
 
-Project Overview:
+#Project Overview#
 
 This project demonstrates a comprehensive Quality Engineering automation strategy designed to validate core
 user onboarding and financial transaction pipelines. The suite incorporates both backend API testing and 
 browser-based UI automation within a single repository, structured across separated, dedicated sub-frameworks.
 
-Key Features:
-1.REST API Automation Framework (Python + pytest)
+Key Features:  
+
+1. REST API Automation Framework (Python + pytest). 
+
  Target Services: Built for /api/users and /api/transactions microservices endpoints.  
  Test Coverage:
 *    CRUD Operations: Happy path validation for user registration and transaction processing.  
@@ -14,17 +16,23 @@ Key Features:
 *    Auth & Security: Unauthenticated/unauthorized request headers testing (401/403 handling).  
  Architecture: Custom APIClient HTTP wrapper featuring request/response lifecycle logging and a dynamic DataFactory for payload generation.
 
-2.Frontend UI Automation Framework (Java + Playwright)
- Design Pattern: Thread-safe Page Object Model (POM) architecture using Java 17 and Playwright Web-First Assertions.
- Test Coverage:User Onboarding Flow: End-to-end user registration and inline validation messaging.  
- Transaction Flow: Financial transfer execution and form field error handling.  
- Cross-Browser & Execution: Configured via TestNG (testng.xml) for multi-threaded parallel execution across Chromium, Firefox, and WebKit browsers.
+2. Frontend UI Automation Framework (Java + Playwright)
+ Design Pattern:  
+ 
+  Thread-safe Page Object Model (POM) architecture using Java 17 and Playwright Web-First Assertions.
+  Test Coverage:User Onboarding Flow: End-to-end user registration and inline validation messaging.  
+  Transaction Flow: Financial transfer execution and form field error handling.  
+  Cross-Browser & Execution: Configured via TestNG (testng.xml) for multi-threaded parallel execution across Chromium, Firefox, and WebKit browsers.
 
-3.Reporting & Test UtilitiesAPI Reporting: Integrated pytest-html providing structured test reports and file logs under api_reports/.
- UI Visual Dashboards: Integrated Allure Reports and ExtentReports with AspectJ Weaver bytecode weaving for step-by-step step logging and failure screenshot attachments.
- Data & Environment Strategy: Environment-agnostic configurations (.env files for Python, static config loaders for Java) allowing seamless switching between local, staging, and production environments.  
+3. Reporting & Test UtilitiesAPI Reporting:  
 
-Getting StartedPrerequisites
+  Integrated pytest-html providing structured test reports and file logs under api_reports/.
+  UI Visual Dashboards: 
+  Integrated Allure Reports and ExtentReports with AspectJ Weaver bytecode weaving for step-by-step step logging and failure screenshot attachments.
+  Data & Environment Strategy:
+  Environment-agnostic configurations (.env files for Python, static config loaders for Java) allowing seamless switching between local, staging, and production environments.  
+
+**Getting Started Prerequisites**
 *  Python 3.9+ and pip
 *  Java JDK 17+ and Apache Maven 3.8+
 *  Node.js (optional, if running mock target servers locally)
