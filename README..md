@@ -26,6 +26,14 @@ Key Features:
   - Cross-Browser & Execution:
       - Configured via TestNG (testng.xml) for multi-threaded parallel execution across Chromium, Firefox, and WebKit browsers.
 
+3. Frontend UI Automation Framework (Java + Selenium)
+  - Design Pattern:
+      - Page Object Model (POM) architecture using Java 17 and Selenium Assertions.
+  - Test Coverage:
+      - Validating all the UI WebElements
+  - Cross-Browser & Execution:
+      - Configured via TestNG (testng.xml) for multi-threaded parallel execution across Chromium, Firefox, and WebKit browsers.
+
 4. Reporting & Test Utilities.  
   - API Reporting:
      - Integrated pytest html providing structured test reports and file logs under api_reports/.
