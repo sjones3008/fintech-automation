@@ -8,10 +8,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/ui_tests_playwright/pom.xml" />
+        <option value="$PROJECT_DIR$/ui_tests_selenium/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (.venv)" project-jdk-type="Python SDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" project-jdk-name="ms-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
